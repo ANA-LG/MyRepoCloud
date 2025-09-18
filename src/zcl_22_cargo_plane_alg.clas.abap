@@ -1,0 +1,20 @@
+CLASS zcl_22_cargo_plane_alg DEFINITION INHERITING FROM zcl_21_airplane_alg
+  PUBLIC
+  FINAL
+  CREATE PUBLIC .
+
+  PUBLIC SECTION.
+    METHODS airplane_type REDEFINITION.
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+ENDCLASS.
+
+
+
+CLASS ZCL_22_CARGO_PLANE_ALG IMPLEMENTATION.
+
+
+  METHOD airplane_type.
+    rv_airplane_type = 'Cargo plane'.
+  ENDMETHOD.
+ENDCLASS.

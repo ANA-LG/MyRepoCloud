@@ -1,0 +1,21 @@
+CLASS zcl_25_company_usa_alg DEFINITION
+  PUBLIC
+  FINAL
+  CREATE PUBLIC .
+
+  PUBLIC SECTION.
+
+    INTERFACES zif_08_co_company_alg .
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+ENDCLASS.
+
+
+
+CLASS ZCL_25_COMPANY_USA_ALG IMPLEMENTATION.
+
+
+  METHOD zif_08_co_company_alg~define_company.
+    rv_company = 'Company USA'.
+  ENDMETHOD.
+ENDCLASS.
