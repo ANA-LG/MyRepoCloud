@@ -1,5 +1,4 @@
-INTERFACE zif_02_eu_unit_alg
-  PUBLIC .
-  METHODS dimensions_centimeters RETURNING VALUE(rv_unit) TYPE zfloat.
+interface ZIF_02_EU_UNIT_ALG
+  public .
 
-ENDINTERFACE.
+endinterface.

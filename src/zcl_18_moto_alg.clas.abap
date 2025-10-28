@@ -1,24 +1,13 @@
-CLASS zcl_18_moto_alg DEFINITION ABSTRACT
-  PUBLIC
-*  FINAL
-  CREATE PUBLIC .
+class ZCL_18_MOTO_ALG definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-    METHODS set_hp IMPORTING iv_hp TYPE i.
-
-  PROTECTED SECTION.
-    METHODS set_max_speed ABSTRACT IMPORTING iv_max_speed TYPE i.
-
-  PRIVATE SECTION.
-    DATA hp TYPE i.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 
 
 CLASS ZCL_18_MOTO_ALG IMPLEMENTATION.
-
-
-  METHOD set_hp.
-
-  ENDMETHOD.
 ENDCLASS.

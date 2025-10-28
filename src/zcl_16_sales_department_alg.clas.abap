@@ -1,25 +1,13 @@
-CLASS zcl_16_sales_department_alg DEFINITION
-  PUBLIC
-  FINAL
-  CREATE PUBLIC .
+class ZCL_16_SALES_DEPARTMENT_ALG definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-    INTERFACES zif_05_sales_order_alg.
-  PROTECTED SECTION.
-  PRIVATE SECTION.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 
 
 CLASS ZCL_16_SALES_DEPARTMENT_ALG IMPLEMENTATION.
-
-
-  METHOD zif_04_document_alg~set_sales_doc.
-
-  ENDMETHOD.
-
-
-  METHOD zif_05_sales_order_alg~create_order.
-
-  ENDMETHOD.
 ENDCLASS.

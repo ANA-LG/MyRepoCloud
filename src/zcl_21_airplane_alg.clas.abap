@@ -1,11 +1,10 @@
-CLASS zcl_21_airplane_alg DEFINITION ABSTRACT
-  PUBLIC
-  CREATE PUBLIC .
+class ZCL_21_AIRPLANE_ALG definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-    METHODS airplane_type ABSTRACT RETURNING VALUE(rv_airplane_type) TYPE string.
-  PROTECTED SECTION.
-  PRIVATE SECTION.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 

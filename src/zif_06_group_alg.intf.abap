@@ -1,4 +1,4 @@
-INTERFACE zif_06_group_alg
-  PUBLIC .
-  METHODS set_group.
-ENDINTERFACE.
+interface ZIF_06_GROUP_ALG
+  public .
+
+endinterface.

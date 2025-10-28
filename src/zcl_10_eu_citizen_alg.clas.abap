@@ -1,12 +1,10 @@
-CLASS zcl_10_eu_citizen_alg DEFINITION INHERITING FROM zcl_09_citizen_alg
-  PUBLIC
-  FINAL
-  CREATE PUBLIC .
+class ZCL_10_EU_CITIZEN_ALG definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-
-  PROTECTED SECTION.
-  PRIVATE SECTION.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 

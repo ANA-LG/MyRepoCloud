@@ -1,12 +1,10 @@
-CLASS zcl_29_keyboard_alg DEFINITION
-  PUBLIC
-  FINAL
-  CREATE PUBLIC .
+class ZCL_29_KEYBOARD_ALG definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-    DATA keyboard_type TYPE string.
-  PROTECTED SECTION.
-  PRIVATE SECTION.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 

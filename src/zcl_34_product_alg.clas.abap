@@ -1,22 +1,13 @@
-CLASS zcl_34_product_alg DEFINITION
-  PUBLIC
-  FINAL
-  CREATE PUBLIC .
+class ZCL_34_PRODUCT_ALG definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-    METHODS return_category RETURNING VALUE(rv_category) TYPE string.
-
-  PROTECTED SECTION.
-  PRIVATE SECTION.
-    DATA category TYPE string VALUE 'A5'.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 
 
 CLASS ZCL_34_PRODUCT_ALG IMPLEMENTATION.
-
-
-  METHOD return_category.
-    rv_category = me->category.
-  ENDMETHOD.
 ENDCLASS.

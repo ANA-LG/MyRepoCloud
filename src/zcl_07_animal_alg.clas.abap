@@ -1,20 +1,13 @@
-CLASS zcl_07_animal_alg DEFINITION
-  PUBLIC
-*  FINAL
-  CREATE PUBLIC .
+class ZCL_07_ANIMAL_ALG definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-    METHODS walk RETURNING VALUE(rv_walk) TYPE string.
-  PROTECTED SECTION.
-  PRIVATE SECTION.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 
 
 CLASS ZCL_07_ANIMAL_ALG IMPLEMENTATION.
-
-
-  METHOD walk.
-    rv_walk = 'The animal walks'.
-  ENDMETHOD.
 ENDCLASS.

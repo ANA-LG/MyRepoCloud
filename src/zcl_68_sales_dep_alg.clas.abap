@@ -1,21 +1,13 @@
-CLASS zcl_68_sales_dep_alg DEFINITION INHERITING FROM zcl_67_observer_alg
-  PUBLIC
-*  FINAL
-  CREATE PUBLIC .
+class ZCL_68_SALES_DEP_ALG definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-
-    DATA state TYPE string.
-    METHODS: on_modifier_state REDEFINITION.
-  PROTECTED SECTION.
-  PRIVATE SECTION.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 
 
-CLASS zcl_68_sales_dep_alg IMPLEMENTATION.
-  METHOD on_modifier_state.
-    me->state = ev_new_state.
-  ENDMETHOD.
-
+CLASS ZCL_68_SALES_DEP_ALG IMPLEMENTATION.
 ENDCLASS.

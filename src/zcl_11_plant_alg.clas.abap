@@ -1,23 +1,13 @@
-CLASS zcl_11_plant_alg DEFINITION
-  PUBLIC
-*  FINAL
-  CREATE PUBLIC .
+class ZCL_11_PLANT_ALG definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-   METHODS get_product RETURNING VALUE(rv_product) TYPE string.
-  PROTECTED SECTION.
-  PRIVATE SECTION.
-
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 
 
 CLASS ZCL_11_PLANT_ALG IMPLEMENTATION.
-
-
-  METHOD get_product.
-DATA(lo_storage_location) = NEW zcl_12_storage_location_alg(  ).
-lo_storage_location->product = 'PC'.
-lo_storage_location->set_product( iv_product = 'Laptop' ).
-  ENDMETHOD.
 ENDCLASS.

@@ -1,12 +1,10 @@
-CLASS zcl_31_vat_indicator_alg DEFINITION
-  PUBLIC
-  FINAL
-  CREATE PUBLIC .
+class ZCL_31_VAT_INDICATOR_ALG definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-  DATA: vat_ind TYPE string.
-  PROTECTED SECTION.
-  PRIVATE SECTION.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 

@@ -1,12 +1,10 @@
-CLASS zcl_33_record_alg DEFINITION
-  PUBLIC
-  INHERITING FROM zcl_32_constr_contract_alg
-  FINAL
-  CREATE PUBLIC .
+class ZCL_33_RECORD_ALG definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-  PROTECTED SECTION.
-  PRIVATE SECTION.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 

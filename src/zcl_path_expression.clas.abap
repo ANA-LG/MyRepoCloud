@@ -1,33 +1,13 @@
-CLASS zcl_path_expression DEFINITION
-  PUBLIC
-  FINAL
-  CREATE PUBLIC .
+class ZCL_PATH_EXPRESSION definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-    INTERFACES if_oo_adt_classrun.
-  PROTECTED SECTION.
-  PRIVATE SECTION.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 
 
-CLASS zcl_path_expression IMPLEMENTATION.
-  METHOD if_oo_adt_classrun~main.
-    SELECT FROM zi_cds_alg019 AS Booking
-    FIELDS Booking~TravelId,
-    Booking~BookingId,
-    \_Travel-AgencyId,
-    \_Travel\_Agency-name AS AgencyName,
-    \_Travel\_Customer-customer_id AS CustomerId,
-    concat_with_space( \_Travel\_Customer-first_name, \_Travel\_Customer-last_name, 1 ) AS CustomerName
-    WHERE Booking~CarrierId EQ 'AA'
-    INTO TABLE @DATA(lt_result)
-    UP TO 5 ROWS.
-
-    IF  sy-subrc EQ 0.
-      out->write( lt_result ).
-    ENDIF.
-
-  ENDMETHOD.
-
+CLASS ZCL_PATH_EXPRESSION IMPLEMENTATION.
 ENDCLASS.

@@ -1,20 +1,13 @@
-CLASS zcl_69_billing_deparment_alg DEFINITION INHERITING FROM zcl_67_observer_alg
-  PUBLIC
-  FINAL
-  CREATE PUBLIC .
+class ZCL_69_BILLING_DEPARMENT_ALG definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-    DATA state TYPE string.
-    METHODS: on_modifier_state REDEFINITION.
-  PROTECTED SECTION.
-  PRIVATE SECTION.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 
 
-CLASS zcl_69_billing_deparment_alg IMPLEMENTATION.
-  METHOD on_modifier_state.
-    me->state = ev_new_state.
-  ENDMETHOD.
-
+CLASS ZCL_69_BILLING_DEPARMENT_ALG IMPLEMENTATION.
 ENDCLASS.

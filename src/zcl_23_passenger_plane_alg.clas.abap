@@ -1,21 +1,13 @@
-CLASS zcl_23_passenger_plane_alg DEFINITION
-  PUBLIC
-  INHERITING FROM zcl_21_airplane_alg
-  FINAL
-  CREATE PUBLIC .
+class ZCL_23_PASSENGER_PLANE_ALG definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-    METHODS: airplane_type REDEFINITION.
-  PROTECTED SECTION.
-  PRIVATE SECTION.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 
 
 CLASS ZCL_23_PASSENGER_PLANE_ALG IMPLEMENTATION.
-
-
-  METHOD airplane_type.
-    rv_airplane_type = 'Passenger plane'.
-  ENDMETHOD.
 ENDCLASS.

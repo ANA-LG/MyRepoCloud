@@ -1,32 +1,13 @@
-CLASS zcl_58_singleton_alg DEFINITION
-  PUBLIC
-  FINAL
-  CREATE PRIVATE .
+class ZCL_58_SINGLETON_ALG definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-    DATA mv_time TYPE zsyst_uzeit.
-    METHODS constructor.
-    CLASS-METHODS get_intance
-      RETURNING VALUE(ro_instance) TYPE REF TO zcl_58_singleton_alg.
-  PROTECTED SECTION.
-  PRIVATE SECTION.
-    CLASS-DATA mo_instance TYPE REF TO zcl_58_singleton_alg.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 
 
-CLASS zcl_58_singleton_alg IMPLEMENTATION.
-  METHOD get_intance.
-    IF mo_instance IS NOT BOUND.
-      mo_instance = NEW #(  ).
-    ENDIF.
-
-    ro_instance = mo_instance.
-
-  ENDMETHOD.
-
-  METHOD constructor.
-    me->mv_time = cl_abap_context_info=>get_system_time(  ).
-      ENDMETHOD.
-
+CLASS ZCL_58_SINGLETON_ALG IMPLEMENTATION.
 ENDCLASS.

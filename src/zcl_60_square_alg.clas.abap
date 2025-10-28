@@ -1,19 +1,13 @@
-CLASS zcl_60_square_alg DEFINITION
-  PUBLIC
-  FINAL
-  CREATE PUBLIC .
+class ZCL_60_SQUARE_ALG definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-      INTERFACES zif_11_geometric_figure_alg.
-    ALIASES draw_shape FOR zif_11_geometric_figure_alg~draw_shape.
-  PROTECTED SECTION.
-  PRIVATE SECTION.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 
 
-CLASS zcl_60_square_alg IMPLEMENTATION.
-  METHOD draw_shape.
-    rv_shape = 'Square'.
-  ENDMETHOD.
+CLASS ZCL_60_SQUARE_ALG IMPLEMENTATION.
 ENDCLASS.

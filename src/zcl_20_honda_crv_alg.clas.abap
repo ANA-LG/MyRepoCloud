@@ -1,28 +1,13 @@
-CLASS zcl_20_honda_crv_alg DEFINITION INHERITING FROM zcl_19_honda_alg
-  PUBLIC
-  FINAL
-  CREATE PUBLIC .
+class ZCL_20_HONDA_CRV_ALG definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-
-  PROTECTED SECTION.
-
-    METHODS: set_max_speed REDEFINITION.
-    METHODS set_model REDEFINITION.
-  PRIVATE SECTION.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 
 
 CLASS ZCL_20_HONDA_CRV_ALG IMPLEMENTATION.
-
-
-  METHOD set_max_speed.
-
-  ENDMETHOD.
-
-
-  METHOD set_model.
-
-  ENDMETHOD.
 ENDCLASS.

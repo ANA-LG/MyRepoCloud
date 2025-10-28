@@ -1,11 +1,10 @@
-CLASS zcl_06_storage_alg_c367 DEFINITION INHERITING FROM zcl_05_plant_alg_c367
-  PUBLIC
-*  FINAL
-  CREATE PUBLIC .
+class ZCL_06_STORAGE_ALG_C367 definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-  PROTECTED SECTION.
-  PRIVATE SECTION.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 

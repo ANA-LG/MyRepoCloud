@@ -1,31 +1,13 @@
-CLASS zcl_66_processes_alg DEFINITION
-  PUBLIC
-  FINAL
-  CREATE PUBLIC .
+class ZCL_66_PROCESSES_ALG definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-  METHODS set_state IMPORTING iv_state TYPE string.
-  METHODS get_state RETURNING VALUE(rv_state)  TYPE string.
-
-  EVENTS modified_state EXPORTING VALUE(ev_new_state) type string.
-  PROTECTED SECTION.
-  PRIVATE SECTION.
-  DATA: current_state TYPE string.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 
 
-CLASS zcl_66_processes_alg IMPLEMENTATION.
-  METHOD set_state.
-me->current_state = iv_state.
-RAISE EVENT modified_state EXPORTING ev_new_state = me->current_state.
-  ENDMETHOD.
-
-  METHOD get_state.
-  rv_state = me->current_state.
-
-  ENDMETHOD.
-
-
-
+CLASS ZCL_66_PROCESSES_ALG IMPLEMENTATION.
 ENDCLASS.

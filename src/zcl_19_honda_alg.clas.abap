@@ -1,12 +1,10 @@
-CLASS zcl_19_honda_alg DEFINITION ABSTRACT INHERITING FROM zcl_18_moto_alg
-  PUBLIC
-*  FINAL
-  CREATE PUBLIC .
+class ZCL_19_HONDA_ALG definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-  PROTECTED SECTION.
-    METHODS set_model ABSTRACT EXPORTING model TYPE string.
-  PRIVATE SECTION.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 

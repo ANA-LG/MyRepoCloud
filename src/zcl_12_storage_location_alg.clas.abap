@@ -1,23 +1,13 @@
-CLASS zcl_12_storage_location_alg DEFINITION
-  PUBLIC
-  FINAL
-  CREATE PUBLIC
-  GLOBAL FRIENDS zcl_11_plant_alg.
+class ZCL_12_STORAGE_LOCATION_ALG definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-
-  PROTECTED SECTION.
-  PRIVATE SECTION.
-    DATA product TYPE string.
-    METHODS set_product IMPORTING iv_product TYPE string.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 
 
 CLASS ZCL_12_STORAGE_LOCATION_ALG IMPLEMENTATION.
-
-
-  METHOD set_product.
-
-  ENDMETHOD.
 ENDCLASS.
