@@ -1,0 +1,9 @@
+define accesspolicy ZASP_ALG {
+    @EndUserText.label: 'Aspect ALG'
+    define aspect ZASP_ALG as
+        select from ZI_CDS_ALG041 with user element UserId
+            {
+                InvoiceId,
+                Plant
+            }      
+}
