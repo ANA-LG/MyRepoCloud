@@ -1,10 +1,13 @@
 @EndUserText.label: 'Table Functions'
-@ClientHandling.algorithm: #NONE
+@AccessControl.authorizationCheck: #NOT_REQUIRED
 //@ClientHandling.type: #CLIENT_DEPENDENT
-@ClientHandling.type: #CLIENT_INDEPENDENT
+//@ClientHandling.algorithm: #NONE
+
 define table function zi_tf_alg01
-  with parameters 
-  pCountryCode : land1 
+  with parameters
+//    @Environment.systemField: #CLIENT
+//    pClient      : abap.clnt,
+    pCountryCode : land1
 returns
 {
   key Client        : abap.clnt;
